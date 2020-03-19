@@ -1,0 +1,15 @@
+
+{% extends 'base.html' %}
+{% block content %}
+<p>The number of images in the document are: 
+<button onclick="myFunction()">Show</button></p>
+<p id="demo"></p>
+<embed src="{{ uploaded_file }}" width="550px" height="703px">
+<script>
+function myFunction() {
+  var x = document.images.length;
+  document.getElementById("demo").innerHTML = x;
+}
+</script>
+  
+{% endblock %}
